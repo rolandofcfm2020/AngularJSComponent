@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script src="~/Scripts/Components/CalculatorComponent.js"></script>
+@*<script src="~/Scripts/Controllers/calcCtrl.js"></script>*@
+
+
+
+<div ng-controller="calcCtrl">
+
+
+    <my-welcome title={{AppName}}></my-welcome>
+    @*<my-calculator-multiply></my-calculator-multiply>*@
+    @*<my-calculator-multiply a="12" b="11"></my-calculator-multiply>*@
+    <my-calculator-multiply a={{x}} b={{y}}></my-calculator-multiply>
+
+
+</div>
